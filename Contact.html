@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<noscript><h2 style="text-align: center"> This page is best viewed with JavaScript enabled</h2></noscript>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope">
+	<link  rel="stylesheet" href="restaurantStyles.css">
+	<title>Contact Us | Brook's House</title>
+	<style>
+
+			label {
+				font-weight: 400;
+			}
+			.form-control {
+				margin: 0 auto;
+				width:350px;
+			}
+			.row-dtma {
+				display:table; 
+				margin: 0 auto;
+			}
+			#ai {
+				height:100px;
+			}
+			#reqItems {
+				font-weight: bold;
+			}
+
+
+	</style>
+</head>
+
+<body>
+	<main class="container-fluid; margin: 0px;">
+		<div class="row">
+			<div class="col-sm-12">
+				<header>
+					<h1>Contact Us</h1><br>
+				</header>
+			</div>
+		</div>
+
+
+		<div class="row justify-content-center">
+			<div class="col-sm-12">
+				<nav class="inner-nav">
+					<ul class="nav nav-pills">
+						<li class="nav-item"><a class="nav-link" href="home.html"><span class="glyphicon glyphicon-home"> Home</span></a></li>
+						<li class="nav-item"><a class="nav-link" href="Menu.html">Menu</a></li>
+						<li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+					</ul>
+					<hr>
+					<div class="clear-float"></div>
+				</nav>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+		<form action="contact.html" onsubmit="formValidation(event)">
+                <div class="row-dtma">
+                    <div class="col-xs-12">
+                        <div class="form-group">
+                            <label for="name" id="reqItems" style="margin-top: 50px;" required>Name:</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                    </div>
+                </div>
+                <div class="row-dtma">
+                    <div class="col-xs-12">
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                    </div>
+                </div>
+                <div class="row-dtma">
+                    <div class="col-xs-12">
+                        <div class="form-group">
+                            <label for="phone" id="reqItems" required>Phone:</label>
+                            <input type="tel" class="form-control" pattern="^\d{3}-\d{3}-\d{4}$||^\d{3}\d{3}\d{4}$" placeholder="###-###-####" id="phone">
+                        </div>
+                    </div>
+                </div>
+            
+            
+            
+                <div class="row-dtma"> 
+                    <div class="col-xs-12">
+                        <div class="form-group">
+                            <label for="sel1">Reason for Inquiry:</label>
+                            <select class="form-control" id="sel1">
+                                <option>Catering</option>
+                                <option>Private Party</option>
+                                <option>Feedback</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-dtma"> 
+                    <div class="col-xs-12">
+                        <div class="form-group">
+                            <label for="ai">Additional Information:</label>
+                            <textarea class="form-control" id="ai"></textarea>
+                        </div>
+                    </div>
+				</div>
+				<br>
+                <div class="row-dtma"> 
+                    <div class="col-xs-12">
+                        <div class="form-group">
+                            <p style="margin-right: 135px">Have you been to this restaurant?</p>
+                                <label class="radio-inline"><input type="radio" name="optradio" checked>No</label>
+                                <label class="radio-inline"><input type="radio" name="optradio" >Yes</label>
+                        </div>
+                    </div>
+				</div>
+				<br>
+                <div class="row-dtma"> 
+                    <div class="col-xs-12">
+                        <div class="form-group">
+                            <p style="margin-right: 185px">Best days to contact you:</p>
+                            <label class="checkbox-inline"><input type="checkbox" value="">M  </label>
+                            <label class="checkbox-inline"><input type="checkbox" value="">T  </label>
+                            <label class="checkbox-inline"><input type="checkbox" value="">W  </label>
+                            <label class="checkbox-inline"><input type="checkbox" value="">Th  </label>
+                            <label class="checkbox-inline"><input type="checkbox" value="">F</label>
+                        </div>
+                    </div>
+				</div>
+				<br>
+                <div class="row-dtma">
+                    <div class="col-xs-12">
+                        <button type="submit" class="btn">Send Request</button>
+                    </div>
+                </div>
+          </form>
+
+
+		<hr style="margin-top: 130px;">
+		<div class="Row">
+			<div class="col-sm-12">
+				<footer>
+					<p>357 Charn Lane, Narnia, MN 76777</p>
+					<p>312-864-4820</p>
+				</footer>
+			</div>
+		</div>
+	</main>
+
+</body>
+		<script src="/Validation.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</html>
